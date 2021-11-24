@@ -1,0 +1,158 @@
+
+/* Specificity & When to use Selectors */
+
+body{
+    text-align: left;
+    color:black;
+
+    /* background: linear-gradient(to right, rgb(6, 110, 196), rgba(255, 229, 108,0)); */
+    background: linear-gradient(to bottom right, rgb(6, 110, 196), rgb(255, 229, 108));
+    /* background-color: rgba(53,111,159,0.4);  */
+    /* background-color: rgb(53,111,159);  */
+    /* background-image: url("https://imgr.search.brave.com/SHF7hXl9nPE9kfav74gyyOLeEJQf-qrj2k1OgqpsPNA/fit/1200/800/ce/1/aHR0cHM6Ly9pMi53/cC5jb20vZ2V0Y29k/aWZ5LmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNi8xMC9Q/eXRob25fbG9nby5q/cGc_Zml0PTE4OTAl/MkM4MDAmc3NsPTE"); */
+    background-size: contain;  /*This resizes the image without messing with others */
+    background-repeat: no-repeat;
+
+}
+
+p{
+    font-size: 20px;
+}
+
+.python-logo { 
+    width: 100px;
+    margin-left: 600px;
+}
+
+h1:hover{
+    color: tomato;
+}
+
+#python-info:hover{
+    color: tomato;
+}
+
+.theme:hover{
+    color: tomato;
+}
+
+.title{
+    color: rgb(255, 229, 108);
+}
+
+#python-info{
+    color: rgb(255, 229, 108);
+}
+
+.theme{
+    color: rgb(255, 229, 108);
+}
+
+color_scheme{
+    text-decoration:underline ;
+    text-decoration-style: double ;
+    text-decoration-color: rgb(255, 229, 108);
+    font-style: italic;
+}
+
+.textbox{
+    height: 150px;
+    width: 300px;
+    font-size:10pt;
+}
+
+/* These are called Pseudoselectors */
+
+li:first-child{
+    color:springgreen;
+    font-size: 20px
+}
+
+
+li:nth-child(2){
+    color:rgb(300, 138, 10);
+    font-size: 20px
+}                                   /* Sudo Selectorss are the most supreme selectors */
+
+li:last-child{
+    color:gold;
+    font-size: 20px
+}
+
+li:only-child{
+    color: hotpink;
+    font-size: 20px;
+}
+
+/* a{
+    color: rgb(238, 255, 0);
+}
+
+#Pyhtonlink:link{
+    color: rgb(238, 255, 0)
+}
+
+#Pythonlink:visited{
+    color:greenyellow;
+} */
+
+/* Advanced Selectors */
+/* General Sibiling */
+
+h2 + a {
+    color: turquoise;
+}
+
+textarea ~ button {     /*This says that every button below the textarea in same PARENT*/
+    color: purple;
+}
+
+/* ul > li {         /* This says that only every single li inside of the ul 
+    color: sandybrown;
+}    This is a child selector*/
+
+/*ul li{        /* This actually selects all the tags inside th ul that is li 
+    color: sandybrown;
+}*/
+
+
+/* Attribute Selectors */
+
+
+h2[class = theme] {
+    color: rgb(255, 229, 108);
+}
+
+
+/* This * symbol says that every single image that starts with this src value right here */
+/* img[src*="D:/【JERIN】/PICS/"] {
+    border: 10px solid black;
+} */
+
+
+
+/* these '{}' are called CSS blocks */
+/* selector {
+    property: value;
+    property2: value;
+    property3: value;
+} */
+
+/* ********************************************************* */
+
+/* Start of new session */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
