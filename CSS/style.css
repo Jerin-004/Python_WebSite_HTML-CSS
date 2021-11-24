@@ -80,7 +80,7 @@ li:last-child{
 }
 
 li:only-child{
-    color: hotpink;
+    color:brown;
     font-size: 20px;
 }
 
