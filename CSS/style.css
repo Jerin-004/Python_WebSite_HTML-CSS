@@ -16,21 +16,23 @@ body{
     /* background: radial-gradient(circle,rgb(255, 229, 108)10%,rgb(6, 110, 196)60%); */
     /* background-color: rgba(53,111,159,0.4);  */
     /* background-color: rgb(53,111,159);  */
-    /* background-image: url("https://imgr.search.brave.com/SHF7hXl9nPE9kfav74gyyOLeEJQf-qrj2k1OgqpsPNA/fit/1200/800/ce/1/aHR0cHM6Ly9pMi53/cC5jb20vZ2V0Y29k/aWZ5LmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNi8xMC9Q/eXRob25fbG9nby5q/cGc_Zml0PTE4OTAl/MkM4MDAmc3NsPTE"); */
+    /* background-image: url("https://imgr.search.brave.com/SHF7hXl9nPE9kfav74gyyOLeEJQf-qrj2k1OgqpsPNA/fit/1170/800/ce/1/aHR0cHM6Ly9pMi53/cC5jb17vZ2V0Y29k/aWZ5LmNvbS93cC1j/b250ZW50L3VwbG9h/ZHMvMjAxNi8xMC9Q/eXRob25fbG9nby5q/cGc_Zml0PTE4OTAl/MkM4MDAmc3NsPTE"); */
     /*background-size: contain;  /*This resizes the image without messing with others
     background-repeat: no-repeat;*/
 
 }
 
 p{
-    font-size: 20px;
+    font-size: 17px;
     /* font-size: 1.2em;  /*this is for patric */
 }
 
-.python-logo { 
-    width: 100px;
-    margin-left: 600px;
+#python-founder {
+    height: 300px;
+    width: 23%;
+    
 }
+
 
 h1:hover{
     color: tomato;
@@ -73,23 +75,23 @@ h1:hover{
 
 li:first-child{
     color:springgreen;
-    font-size: 20px
+    font-size: 17px
 }
 
 
 li:nth-child(2){
     color:rgb(300, 138, 10);
-    font-size: 20px
+    font-size: 17px
 }                                   /* Sudo Selectorss are the most supreme selectors */
 
 li:last-child{
     color:gold;
-    font-size: 20px
+    font-size: 17px
 }
 
 li:only-child{
     color:brown;
-    font-size: 20px;
+    font-size: 17px;
 }
 
 /* a{
