@@ -29,8 +29,17 @@ p{
 
 #python-founder {
     height: 300px;
-    width: 23%;
-    
+    /* width: 23%; */
+    border: 2px double rgb(34, 24, 97);
+    /* margin: 80px 40px; */
+    /* padding: 100px 40px 5px 0px; */
+    /* margin: 50px ; */
+    /* padding: 50px ; */
+    /* float: right; */
+    /* display: none;  /*Very very commanly used  */
+    /* display: inline-block; */
+    /* display: inline; */
+
 }
 
 
