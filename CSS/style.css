@@ -2,11 +2,13 @@
 /* Specificity & When to use Selectors */
 
 body{
-    
+    /* font-family: "Geogia",serif;  /*so this code ssays that first use times new roman and if Geogia is not available then use serif */
+    font-family: sans-serif;
+    /* font-family: 'Patrick Hand', cursive, serif; */
     text-align: justify;
     color:black;
-    font-size: 1em;
-    font-weight: 400;  /*400 is the standart range fool!!*/
+    font-size: 1em;  /*1.2 is for patric */
+    /*font-weight: 400;  /*400 is the standart range fool!! */
 
 
     /* background: linear-gradient(to right, rgb(6, 110, 196), rgba(255, 229, 108,0)); */
@@ -22,6 +24,7 @@ body{
 
 p{
     font-size: 20px;
+    /* font-size: 1.2em;  /*this is for patric */
 }
 
 .python-logo { 
