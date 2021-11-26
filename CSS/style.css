@@ -247,12 +247,7 @@ h2[class = theme] {
 
 /* Text mainpulation */
 
-#Pythonlink {
-    /* text-decoration: none;
-    text-decoration: line-through;
-    text-decoration: overline; */
-    text-decoration: underline;
-}
+
 
 /* .info {
     text-transform:capitalize;
@@ -275,10 +270,37 @@ h2[class = theme] {
         transform: translate(20px, 20px);
     }
 }
+@keyframes blinking-effect {
+    0% {
+        color: rgb(108, 255, 248);
+    }
+
+    100% {
+        color:rgb(20, 130, 220)
+    }
+}
+
+#Pythonlink {
+    /* text-decoration: none;
+    text-decoration: line-through;
+    text-decoration: overline; */
+    text-decoration: underline;
+    animation: blinking-effect;
+    animation-duration: 0.15s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: reverse;
+}
 
 #python-info{
     color: rgb(255, 229, 108);
     animation: red-black ;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    /* animation-delay: 2s; */
+    animation-iteration-count: 2;
+    animation-direction: alternate-reverse;
+
 }
 
 
