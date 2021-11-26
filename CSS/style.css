@@ -109,6 +109,22 @@ h1:hover{
 }
 /* These are called Pseudoselectors */
 
+.grid-container {
+    margin: 10px;
+    height: 300px;
+
+    display: grid;
+}
+
+.grid-item {
+    color: black;
+    font-size: 20px;
+    text-align: center;
+
+    width: 70px;
+    line-height: 40px;
+    margin: 10px;
+}
 li:first-child{
     color:springgreen;
     font-size: 17px
