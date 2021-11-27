@@ -3,12 +3,14 @@
 
 body{
     /* font-family: "Geogia",serif;  /*so this code ssays that first use times new roman and if Geogia is not available then use serif */
-    font-family: sans-serif;
-    /* font-family: 'Patrick Hand', cursive, serif; */
-    text-align: justify;
+    /* font-family: sans-serif; */
+    font-family: 'Patrick Hand', cursive, serif;
+    text-align: left;
     color:black;
-    font-size: 1em;  /*1.2 is for patric */
-    /*font-weight: 400;  /*400 is the standart range fool!! */
+    font-size: 1.2em;
+    /* font-size: 1.4em;  1.2 is for patric */
+    /* font-size: 17px; */
+    /* font-weight: 400;  400 is the standart range fool!! */
 
 
     /* background: linear-gradient(to right, rgb(6, 110, 196), rgba(255, 229, 108,0)); */
@@ -24,13 +26,20 @@ body{
 }
 
 p{
-    font-size: 17px;
-    /* font-size: 1.2em;  /*this is for patric */
+    /* font-size: 17px; */
+    font-size: 1.2em;  /*this is for patric*/
+}
+
+ul {
+    text-align: left;
+}
+
+form {
+    text-align:left;
 }
 
 #python-founder {
-    height: 300px;
-    /* width: 23%; */
+    width: 140px;
     border: 2px double rgb(34, 24, 97);
     /* margin: 80px 40px; */
     /* padding: 100px 40px 5px 0px; */
@@ -76,9 +85,10 @@ h1:hover{
 }
 
 .textbox{
-    height: 300px;
-    width: 60%;
-    font-size:14pt;
+    height: 200px;
+    width: 80%;
+    font-size:12pt;
+    font-family: 'Patrick Hand', cursive, serif;
 }
 
 .name-box {
@@ -168,23 +178,28 @@ h1:hover{
 
 li:first-child{
     color:springgreen;
-    font-size: 17px
+    font-size: 1.2em;
 }
 
 
 li:nth-child(2){
-    color:rgb(300, 138, 10);
-    font-size: 17px
+    color: rgb(300, 138, 10);
+    font-size: 1.2em;
 }                                   /* Sudo Selectorss are the most supreme selectors */
 
-li:last-child{
+li:nth-child(3){
     color:gold;
-    font-size: 17px
+    font-size: 1.2em;
+}   
+
+li:last-child{
+    color:rgb(172, 43, 43);
+    font-size: 1.2em;
 }
 
 li:only-child{
-    color:brown;
-    font-size: 17px;
+    color:rgb(172, 43, 43);
+    font-size: 1.2em;
 }
 
 /* a{
