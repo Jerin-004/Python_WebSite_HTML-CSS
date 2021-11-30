@@ -45,22 +45,45 @@ num--;
 console.log(num);
 
 
-// Reference types
+// Reference types 
+let myShop = {
+    products: "Soap",
+    price: 200,
+    place: "Chennai"
+};
+
+function checkObj(checkProp) {
+
+    if (myShop.hasOwnProperty(checkProp)){
+        return myShop[checkProp];
+    }
+
+    else {
+        return "Property not found";
+    }
+}
+console.log(checkObj("products"))
+
 
 let person = {
     name: "Jerin",
     age: 18
 }; // Object literal
 
+// updating objects
+person.talent = "Programmer"
+
+
+// deleting a object property
+delete person.talent;
+
 // Dot notation
 person.name = "Cj";
-
-
 // Bracket notation
 person["age"] = "18";
-
 console.log(person.name);
 console.log(person.age);
+console.log(person.talent)
 
 
 // Arrays
@@ -118,7 +141,6 @@ console.log(ourVar);
 let myShoppingList = [["cereal", 3], ["milk", 500], ["bananas", 10], ["eggs", 10]];
 
 
-
 // Global scope
 
 let sum;  // this is a global variable 
@@ -128,3 +150,183 @@ function add(x, y) {
 }
 
 add(12,12);
+
+
+// Stand in line
+
+function nextInLine(arr, item) {
+    arr.push(item);
+    arr.shift(item);
+    return item;
+}
+
+var testArr = [1,2,3,4,5];
+
+console.log("Before: " + JSON.stringify(testArr));   // This JSON.stringify is used to display the array neatly
+console.log(nextInLine(testArr, 6));
+console.log("After: " + JSON.stringify(testArr));
+
+
+// conditional statements
+
+function TrueOrFalse(isItTrue) {
+    if (isItTrue) {
+        return "Yes, it's true";
+    }
+
+    return "No, it's false";
+}
+
+console.log(TrueOrFalse(false))
+
+function compareEqaulity(a, b) {
+    if (a == b) {       // if we give two equal to symbol which converts the data type of the b,  but if we give three equal to symbol it does not change the data type
+        return "Equal";
+    }
+
+    return "Not Equal";
+}
+
+console.log(compareEqaulity(10, "10"));
+
+
+// Strict equality operator
+
+function testStrictNotEqual(val) {
+    
+    if (val == 50)  {
+        return "Half"
+        
+    }
+
+    else if (val !== 100) {
+        return "Not equal"
+    }
+
+    else{
+        return "Equal"
+    }
+}
+
+console.log(testStrictNotEqual(50));    // if we use Strict not equal to (!==) so this does not change the data type of the argument what ever we pass where as if we give just not equal to (!=) so this changes the dataType of the argument verymuch 
+
+
+// Switch statements
+
+function caseInSwitch(newVal) {
+    let answer = "";
+
+    switch (newVal) {
+        case 1:
+            answer = "alpha";
+            break;
+
+        case 2:
+            answer = "beta";
+            break;
+
+        case 3:
+            answer = "gamma";
+            break;
+
+        case 4:
+            answer = "delta";
+            break;
+    
+        default:
+            return "Enter the correct option"
+            break;
+    }
+
+    return answer;
+}
+
+console.log(caseInSwitch(4));
+
+
+// nested objects
+
+let myStorage = {
+    "car": 
+    {
+        "inside": 
+        {
+            "glove box": "maps",
+            "passengers seat": "crumbs"
+        },
+
+        "outside": 
+
+        {
+            "trunk": "jack"
+        }
+    }
+};
+
+var gloveBoxContents = myStorage.car.inside["glove box"];
+console.log(gloveBoxContents);
+
+
+// nested array
+
+let myPlants = [
+{
+    type: "flowers",
+    list: ["rose", "tulip", "dandelion"]
+}, 
+
+{
+    type: "trees",
+    list: ["oak", "pine", "brich"]
+}
+];
+
+let secondTree = myPlants[1].list[1];
+console.log(secondTree);
+
+
+// loops
+// while loop
+
+let myArray = [];
+
+let i = 0;
+while (i < 10) {
+    myArray.push(i);
+    i++;
+}
+
+console.log(myArray);
+
+
+// For loops
+let myArr = [];
+
+for (let i = 0; i < 20; i++) {
+    myArr.push(i);
+}
+
+console.log(myArr);
+
+
+// for (let i = 1; i < 10; i+=2) {
+//     console.log(i);
+// }
+
+// Nesting for loops
+
+function mutiply(arr) {
+    let matrix = 1;
+
+    for (let i = 0; i < arr.length; i++) {
+        
+        for (let j = 0; j < arr[i].length; j++) {
+            matrix *= arr[i][j];
+            
+        }
+    }
+    return matrix;
+}
+
+let matrixArr = [[1,2], [3,4], [5,6,7]];
+console.log(mutiply(matrixArr));
