@@ -10,6 +10,9 @@ let isApproved = false   // Boolean literal
 let middleName = undefined;
 let nickName = null;
 
+var a;
+var b = 2;
+
 
 // They cannot be a reserved keyword
 // They should be meaningful
@@ -39,4 +42,29 @@ person.name = "Cj";
 person["age"] = "18";
 
 console.log(person.name);
-console.log(person.age)
+console.log(person.age);
+
+
+// Arrays
+let selectedColors = ["Red", "Blue"];
+selectedColors[2] = 1;
+console.log(selectedColors[0]);
+console.log(selectedColors.length);
+
+
+// Functions
+
+// Performing a task
+function greet(name, lastName) {
+    console.log("Hello there,",name,"",lastName);
+}
+
+greet(name,"Cj");
+
+
+// Calculates a value
+function square(number) {
+    return number * number
+}
+
+console.log(square(2));
