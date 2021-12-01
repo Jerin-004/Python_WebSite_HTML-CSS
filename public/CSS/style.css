@@ -137,6 +137,9 @@ h1:hover{
     color: white;
     background: rgb(54, 198, 255);
     transition: all 300ms ease-in-out ;
+    -webkit-transition: all 300ms ease-in-out ;
+    -moz-transition: all 300ms ease-in-out ;
+    -o-transition: all 300ms ease-in-out ;
 
 }
 
