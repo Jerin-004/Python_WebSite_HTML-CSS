@@ -1,6 +1,6 @@
 // This is my first javascript code
 // console.log("Hello World");
-
+console.log(firebase)
 
 // These are primitive types
 let name = "Jerin";   // String literal
