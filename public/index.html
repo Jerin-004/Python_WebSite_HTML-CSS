@@ -1,89 +1,162 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="CSS/style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Python fan page</title>
+        <!-- update the version number as needed -->
+        <script defer src="/__/firebase/9.5.0/firebase-app-compat.js"></script>
+        <!-- include only the Firebase features as you need -->
+        <script defer src="/__/firebase/9.5.0/firebase-auth-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-database-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-firestore-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-functions-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-messaging-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-storage-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-analytics-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-remote-config-compat.js"></script>
+        <script defer src="/__/firebase/9.5.0/firebase-performance-compat.js"></script>
+        <!-- 
+        initialize the SDK after all desired features are loaded, set useEmulator to false
+        to avoid connecting the SDK to running emulators.
+        -->
+        <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    </head>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/9.5.0/firebase-app-compat.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.5.0/firebase-auth-compat.js"></script>
-    <script defer src="/__/firebase/9.5.0/firebase-database-compat.js"></script>
-    <script defer src="/__/firebase/9.5.0/firebase-firestore-compat.js"></script>
-    <script defer src="/__/firebase/9.5.0/firebase-functions-compat.js"></script>
-    <script defer src="/__/firebase/9.5.0/firebase-messaging-compat.js"></script>
-    <script defer src="/__/firebase/9.5.0/firebase-storage-compat.js"></script>
-    <script defer src="/__/firebase/9.5.0/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.5.0/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.5.0/firebase-performance-compat.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+    <body>
+        <hr/>
+        <h1 class="title"><span class="header-style"><i>Welcome to Python's official fan page</i></span></h1>
+        <!-- <img class="python-logo" src="D:/【JERIN】/PICS/python pic.png" alt="Python logo"> -->
+        <p class="info">In this website I will be posting
+        all sort of python stuffs and frameworks.</p>
+       
+        <hr/>
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+        <h2 id="python-info"><span class="header-style"><i>About Python:</i></span></h2>
+        <img id="python-founder"  src="images/225px-Guido_van_Rossum_OSCON_2006_cropped.png" alt="desiger of python" align="right" hspace="30">
+        <p >Python is an interpreted high-level general-purpose programming language. 
+        Its design philosophy emphasizes code readability with its use of significant indentation. 
+        Its language constructs as well as its object-oriented approach aim to help programmers write clear, 
+        logical code for small and large-scale projects.</p>
+        
+        <!--headers are the least specific-->
+        <!--next class ; classes can be used more than one time-->
+        <!--next Id; ID can only used one time sadly fool!!-->
+        <!--But inline styling is given more importance fool!!-->
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+        <ul>
+            <li>Easy to learn</li>
+            <li>Cross-platform</li>
+            <li>And learning this language gives you more job opurtunity</li>
+            <li>Object oriented programming language</li>
+        </ul>
 
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+        <hr/>
+        <h2 class="theme"><span class="header-style">Python official website</span></h2>
+        <a id="Pythonlink" target="_blank" href="https://www.python.org/">Click here to go to Python's official website</a>
+        <br/>
+        <br/>
+        <hr/>
+
+        <h2 class="theme"><span class="header-style">Customer corner</span></h2>
+        <p>Enter your details below and youe email so that I could able to mail you 
+        regularly about python and it's frameworks</p>
+        
+
+        <form> 
+
+            <br/>
+            <input class="name-box" type="text" placeholder="Full name">
+            <br/>
+            <br/>
+            <input class="email-box" type="email" placeholder="email">
+            <br/>
+            <br/>
+            <textarea class="textbox">Leave your comments here</textarea>
+            <br/>
+            <br/>
+            <button class="submit-button">Submit</button>
+
+        </form>
+
+        <hr/>
+        <p style="text-align: left;">If your have any queries please contact the email below: </p>
+        <ul>
+            <li>
+                chijithjerin2004@gmail.com
+            </li>
+        </ul>
+        <!-- <hr/>
+        <div class="container">
+            <div class="container-item" style="order: 4; 
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            flex: 1 1 100px;
+            align-self: center">A</div>
+            <div class="container-item" style="order: 3; 
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            flex: 1 1 100px;
+            align-self: flex-end;">B</div>
+            <div class="container-item" style="order: 5; 
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            flex: 1 1 100px;
+            align-self: flex-start">C</div>
+            <div class="container-item" style="order: 2; 
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            flex: 1 1 100px;
+            align-self: center;">D</div>
+            <div class="container-item" style="order: 1; 
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;
+            flex: 1 1 100px;
+            align-self: flex-start;">E</div>
+        </div>
+        <hr/>
+
+        <div class="grid-container">
+            <div class="grid-item" style="background: coral; grid-area: 2 / 1 / span 2 / span 3;">1</div>
+            <div class="grid-item" style="background:lightgreen;">2</div>
+            <div class="grid-item" style="background:magenta">3</div>
+            <div class="grid-item" style="background:mediumturquoise;">4</div>
+            <div class="grid-item" style="background:cornflowerblue;">5</div>
+            <div class="grid-item" style="background:rgb(237, 100, 100);">6</div>       
+        </div> -->
+        <hr/>
+
+        <script type="module" src="Basics.js">
+            // Import the functions you need from the SDKs you need
+            import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
+            import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
+            // TODO: Add SDKs for Firebase products that you want to use
+            // https://firebase.google.com/docs/web/setup#available-libraries
+
+            // Your web app's Firebase configuration
+            // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+            const firebaseConfig = {
+                apiKey: "AIzaSyDDKECEIULFMA5vohKCsXg_YYLrnJ-uApE",
+                authDomain: "python-fan-page.firebaseapp.com",
+                projectId: "python-fan-page",
+                storageBucket: "python-fan-page.appspot.com",
+                messagingSenderId: "1001846972191",
+                appId: "1:1001846972191:web:dc5cd1029890b1d3de5a2a",
+                measurementId: "G-B6QDD2SFS6"
+            };
+
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
+            const analytics = getAnalytics(app);
+        </script>
+    </body>
 </html>
