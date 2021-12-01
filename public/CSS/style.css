@@ -2,10 +2,11 @@
 /* Specificity & When to use Selectors */
 
 body{
+
     /* font-family: "Geogia",serif;  /*so this code ssays that first use times new roman and if Geogia is not available then use serif */
     /* font-family: sans-serif; */
     font-family: 'Patrick Hand', cursive, serif;
-    text-align: left;
+    text-align:left;
     color:black;
     font-size: 1.2em;
     /* font-size: 1.4em;  1.2 is for patric */
@@ -36,6 +37,10 @@ ul {
 
 form {
     text-align:left;
+}
+
+#python-logo {
+    width: 100%;
 }
 
 #python-founder {
@@ -87,7 +92,7 @@ h1:hover{
 .textbox{
     height: 200px;
     width: 80%;
-    font-size:12pt;
+    font-size:  1.2em;;
     font-family: 'Patrick Hand', cursive, serif;
 }
 
@@ -98,6 +103,36 @@ h1:hover{
 .email-box {
     width: 250px;
 }
+
+.links-container {
+    box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    height: 110px ;
+    display: flex; /*Flex box tutorial */
+    flex-direction:row;
+    /* flex-wrap: wrap; */
+    /* justify-content: flex-end; */
+    /* justify-content: space-between; */
+    justify-content: space-around;  /*it creates spaces all around
+    /* justify-content: space-evenly; */
+    align-items: center;
+}
+
+.links {
+    padding: 2% 2%;
+    
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1.2em;
+    color: white;
+    background: rgb(54, 198, 255);
+    transition: all 300ms ease-in-out ;
+
+}
+
+.links:hover {
+    background: rgb(95, 93, 248);
+}
+
 
 .submit-button {
     margin: 20px 10px;
