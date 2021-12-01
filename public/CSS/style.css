@@ -120,15 +120,12 @@ h1:hover{
 
 @media screen and (max-width: 869px) {
   .links-container {
-      box-shadow: none;
+    box-shadow: none;
     flex-direction:column;
     align-items: flex-start;
   }
 
-  .links{
-      
 
-  }
 }
 
 .links {
