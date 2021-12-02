@@ -14,11 +14,11 @@
     ],
     "headers": [
       {
-        "source": "/Basics.js",
+        "source": "**/*.html",
         "headers": [
         {
           "key": "Cache-Control",
-          "value": "max-age=30"
+          "value": "private, max-age=0, no-cache"
         }
       ]
       }
