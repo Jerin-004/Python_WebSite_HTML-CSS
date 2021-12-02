@@ -331,5 +331,5 @@ function mutiply(arr) {
 let matrixArr = [[1,2], [3,4], [5,6,7]];
 console.log(mutiply(matrixArr));
 
-let name2 = window.prompt("Enter your name: ");
-alert("Welcome " + name2);
+// let name2 = window.prompt("Enter your name: ");
+// alert("Welcome " + name2);
