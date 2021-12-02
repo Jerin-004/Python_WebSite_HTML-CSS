@@ -14,7 +14,7 @@
     ],
     "headers": [
       {
-        "source": "*.*",
+        "source": "/Basics.js",
         "headers": [
         {
           "key": "Cache-Control",
