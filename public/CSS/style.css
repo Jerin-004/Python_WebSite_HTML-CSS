@@ -29,6 +29,7 @@ body{
 p{
     /* font-size: 17px; */
     font-size: 1.2em;  /*this is for patric*/
+    text-align: justify;
 }
 
 ul {
