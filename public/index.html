@@ -84,20 +84,20 @@
         regularly about python and it's frameworks</p>
         
 
-        <form> 
+        <form action="https://formspree.io/f/mknywyrr" method="POST" id="my-form"> 
 
             <br/>
-            <input class="name-box" type="text" placeholder="Full name">
+            <input name="fullname" class="name-box" type="text" placeholder="Full name">
             <br/>
             <br/>
-            <input class="email-box" type="email" placeholder="email">
+            <input name="email" class="email-box" type="email" placeholder="email">
             <br/>
             <br/>
-            <textarea class="textbox">Leave your comments here</textarea>
+            <textarea name="comments" class="textbox" placeholder="Leave your comments here"></textarea>
             <br/>
             <br/>
-            <button class="submit-button">Submit</button>
-
+            <button id="my-form-button" type="submit" class="submit-button">Submit</button>
+            <p id="status"></p>
         </form>
 
         <hr/>
@@ -152,7 +152,7 @@
         </div> -->
         <hr/>
 
-        <script type="module" src="Basics.js">
+        <script type="module" src="app.js">
             // Import the functions you need from the SDKs you need
             import { initializeApp } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-app.js";
             import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-analytics.js";
