@@ -38,9 +38,19 @@ td {
 }
 
 #contact-me-container {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    background:rgb(255, 251, 0); */
+
+    /* display: flex;
+    flex-direction: column; */
+    /* box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25); */
     background:rgb(202, 201, 135);
+    text-align: center;
+    /* fill: rgb(202, 201, 135); */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: -10px -7px;
     
 }
