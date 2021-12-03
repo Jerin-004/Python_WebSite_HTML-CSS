@@ -1,0 +1,46 @@
+body {
+    font-family: 'Patrick Hand', cursive, serif;
+    background:linear-gradient(to bottom right, rgb(6, 110, 196), rgb(255, 229, 108));
+    background-repeat: no-repeat;
+}
+
+
+
+.head-style {
+    color: rgb(255, 229, 108);
+    text-decoration:underline ;
+    text-decoration-style: double ;
+    text-decoration-color: rgb(255, 229, 108);
+    font-style: italic;
+}
+
+.head-style:hover {
+    color: tomato;
+}
+
+.paragraph-style {
+    font-size: 1.2em;  /*this is for patric*/
+    text-align: justify;
+}
+
+table, th, td {
+    font-size: 1.2em;
+    border: 1px solid black;
+}
+
+td {
+    text-align: center;
+}
+
+#table-container {
+    display: flex;
+   flex-direction:column; 
+}
+
+#contact-me-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    background:rgb(202, 201, 135);
+    
+}

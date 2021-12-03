@@ -93,33 +93,44 @@ h1:hover{
 }
 
 .textbox{
-    height: 200px;
-    width: 80%;
+    height: 370px;
+    width: 690px;
     font-size:  1.2em;;
     font-family: 'Patrick Hand', cursive, serif;
 }
 
 .name-box {
-    width: 40%;
+    width: 340px;
     font-size:  1.2em;;
     font-family: 'Patrick Hand', cursive, serif;
 }
 
 .email-box {
-    width: 40%;
+    width: 340px;
     font-size:  1.2em;;
     font-family: 'Patrick Hand', cursive, serif;
 }
 
-@media screen and (max-width: 619px) {
+@media screen and (max-width: 746px) {
     .name-box {
-        width: 250px;
+        width: 280px;
     }
 
     .email-box {
-        width: 250px;
+        width: 280px;
     }
 
+    .textbox {
+        width: 470px;;
+    }
+
+}
+
+@media screen and (max-width: 504px) {
+
+    .textbox {
+        width: 90%;
+    }
 
 }
 
@@ -424,6 +435,15 @@ h2[class = theme] {
   }
 }
 
+
+
+#contact-me-container {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25);
+    background:rgb(202, 201, 135);
+    
+}
 
 
 

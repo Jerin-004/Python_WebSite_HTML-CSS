@@ -1,6 +1,6 @@
 // This is my first javascript code
 // console.log("Hello World");
-console.log(firebase)
+// console.log(firebase)
 
 // These are primitive types
 let name = "Jerin";   // String literal
@@ -333,3 +333,12 @@ console.log(mutiply(matrixArr));
 
 // let name2 = window.prompt("Enter your name: ");
 // alert("Welcome " + name2);
+
+let no = 0;
+do
+{
+    let tableNo = 5;
+    no++;
+    let tableContent = tableNo * no;
+    console.log(tableNo +" * "+ no +" = "+ tableContent)
+}while(no < 20);
