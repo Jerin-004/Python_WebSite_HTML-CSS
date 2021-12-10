@@ -419,12 +419,12 @@ h2[class = theme] {
 
 #python-info{
     color: rgb(255, 229, 108);
-    animation: red-black ;
+    /* animation: red-black ;
     animation-duration: 4s;
     animation-timing-function: linear;
     /* animation-delay: 2s; */
-    animation-iteration-count: 2;
-    animation-direction: alternate-reverse;
+    /*animation-iteration-count: 2;
+    animation-direction: alternate-reverse; */
 
 }
 
