@@ -26,7 +26,20 @@ body{
 
 }
 
+#main-container {
+    /* margin-left: -20px; */
+    margin-right: 80px;
+    margin-left: 80px;
+}
 
+@media screen and (max-width: 873px) {
+    #main-container {
+        margin-right: 5px;
+        margin-left: 5px;
+        
+    }
+
+}
 
 p{
     /* font-size: 17px; */
@@ -117,7 +130,7 @@ h1:hover{
     /* text-align: center; */
 }
 
-@media screen and (max-width: 746px) {
+@media screen and (max-width: 813px) {
     .name-box {
         width: 280px;
     }
@@ -132,7 +145,7 @@ h1:hover{
 
 }
 
-@media screen and (max-width: 504px) {
+@media screen and (max-width: 573px) {
 
     .textbox {
         width: 90%;
