@@ -15,7 +15,7 @@ body{
 
 
     /* background: linear-gradient(to right, rgb(6, 110, 196), rgba(255, 229, 108,0)); */
-    background: linear-gradient(to bottom right, rgb(6, 110, 196), rgb(255, 229, 108));
+    background: linear-gradient(to bottom right, rgb(13, 70, 117), rgb(210, 230, 247));
     /* background: radial-gradient(circle,rgb(255, 229, 108)10%,rgb(6, 110, 196)60%); */
     /* background-color: rgba(53,111,159,0.4);  */
     /* background-color: rgb(53,111,159);  */
@@ -34,8 +34,8 @@ body{
 
 @media screen and (max-width: 873px) {
     #main-container {
-        margin-right: 5px;
-        margin-left: 5px;
+        margin-right: 8px;
+        margin-left: 8px;
         
     }
 
@@ -99,8 +99,8 @@ h1:hover{
 }
 
 .header-style{
-    text-decoration:underline ;
-    text-decoration-style: double ;
+    /* text-decoration:underline ;
+    text-decoration-style: double ; */
     text-decoration-color: rgb(255, 229, 108);
     font-style: italic;
 }
@@ -192,7 +192,7 @@ h1:hover{
     border-radius: 25px;
     font-size: 1.2em;
     color: white;
-    background: rgb(54, 198, 255);
+    background: rgb(15, 147, 199);
     transition: all 300ms ease-in-out ;
     -webkit-transition: all 300ms ease-in-out ;
     -moz-transition: all 300ms ease-in-out ;
@@ -287,28 +287,28 @@ h1:hover{
 }
 
 li:first-child{
-    color:springgreen;
+    /* color:springgreen; */
     font-size: 1.2em;
 }
 
 
 li:nth-child(2){
-    color: rgb(300, 138, 10);
+    /* color: rgb(300, 138, 10); */
     font-size: 1.2em;
 }                                   /* Sudo Selectorss are the most supreme selectors */
 
 li:nth-child(3){
-    color:gold;
+    /* color:gold; */
     font-size: 1.2em;
 }   
 
 li:last-child{
-    color:rgb(172, 43, 43);
+    /* color:rgb(172, 43, 43); */
     font-size: 1.2em;
 }
 
 li:only-child{
-    color:rgb(172, 43, 43);
+    /* color:rgb(172, 43, 43); */
     font-size: 1.2em;
 }
 
@@ -471,7 +471,7 @@ footer {
     /* display: flex;
     flex-direction: column; */
     /* box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25); */
-    background:rgb(202, 201, 135);
+    background:rgb(202, 231, 132);
     text-align: center;
     /* fill: rgb(202, 201, 135); */
     padding-top: 20px;
