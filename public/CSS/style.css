@@ -1,6 +1,11 @@
 
 /* Specificity & When to use Selectors */
 
+html {  
+      scroll-behavior: smooth;  
+}
+
+
 body{
 
     /* font-family: "Geogia",serif;  /*so this code ssays that first use times new roman and if Geogia is not available then use serif */
@@ -8,7 +13,7 @@ body{
     font-family: 'Patrick Hand', cursive, serif;
     text-align:left;
     color:black;
-    font-size: 1.2em;
+    font-size: 1.1em;
     /* font-size: 1.4em;  1.2 is for patric */
     /* font-size: 17px; */
     /* font-weight: 400;  400 is the standart range fool!! */
@@ -28,7 +33,7 @@ body{
 
 #main-container {
     /* margin-left: -20px; */
-    background:rgba(8, 101, 177, 0.349);
+    background:rgba(8, 101, 177, 0.13);
     border-radius: 40px;
     margin-top: 50px;
     margin-right: 80px;
@@ -60,8 +65,140 @@ form {
     text-align:left;
 }
 
-#python-logo {
+.containerLogo {
     width: 100%;
+    background: url("../images/python\ fan\ page\ bg.png") top right no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+}
+
+#typeWriting {
+    display: none;
+}
+
+@media screen and (max-width: 1149px) {
+    #python-logo {
+        width: none;
+        display: flex;
+        background: none;
+        align-items: center;
+        justify-content: center;
+        
+    }
+
+    #typeWriting {
+        display:flex;
+        justify-content: center;    
+    }
+     
+    .anim-typewriter {
+        width: 22ch;
+        animation: typing 2s steps(22), blink .5s step-end infinite alternate;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid;
+        font-size: 90px;
+    }
+
+    @keyframes typing {
+        from {
+            width: 0
+        }
+    }
+        
+    @keyframes blink {
+        50% {
+            border-color: transparent
+        }
+    }
+}
+
+@media screen and (max-width: 977px) {
+    .anim-typewriter {
+        font-size: 70px;
+    }
+}
+
+
+@media screen and (max-width: 788px) {
+    .anim-typewriter {
+        font-size: 60px;
+    }
+}
+
+
+
+@media screen and (max-width: 670px) {
+    .anim-typewriter {
+        font-size: 55px;
+    }
+}
+
+
+@media screen and (max-width: 583px) {
+    .anim-typewriter {
+        font-size: 53px;
+    }
+}
+
+
+@media screen and (max-width: 570px) {
+    .anim-typewriter {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 517px) {
+    .anim-typewriter {
+        font-size: 40px !important;
+    }
+}
+
+@media screen and (max-width: 570px) {
+    .anim-typewriter {
+        font-size: 30px !important;
+    }
+}
+
+@media screen and (max-width: 322px) {
+    .containerLogo {
+        /* width: auto; */
+        /* height: calc(100vh - 8em); */
+        /* padding: 4em; */
+        display: flex;
+        background: none;
+        background-size: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #typeWriting {
+        display:flex;
+        /* height: 100%; */
+        justify-content: center;
+        align-items: center;
+    }
+        
+    
+    .anim-typewriter{
+        /* color: #D64933; 
+        font-family: 'Lato', cursive;
+        font-size: 10vh;  */
+        white-space: nowrap;
+        overflow: hidden;
+        width: 30em;
+        animation: title 7s steps(70, end); 
+        margin-bottom: 40px;
+
+    }
+
+    @keyframes title{ 
+        from { width: 0; opacity: 0.0;}
+        to { opacity: 1.0; } 
+    }  
+
 }
 
 #python-founder {
@@ -81,7 +218,7 @@ form {
 }
 
 
-h1:hover{
+/* h1:hover{
     color: tomato;
 }
 
@@ -91,7 +228,7 @@ h1:hover{
 
 .theme:hover{
     color: tomato;
-}
+} */
 
 .title{
     color: rgb(255, 229, 108);
@@ -201,16 +338,18 @@ h1:hover{
         
     }
 
+
     .links {
         flex:1 1 0;
-
-    }
-
-    .links:hover:disabled {
-        background: rgb(95, 93, 248);
+        background: rgb(15, 147, 199);
         color: white;
         box-shadow: 0 0.4em 0.25em 0.1em rgba(0, 0, 0, 0.25);
+        transition: none;
     
+    }
+
+    .links:hover {
+        background: rgb(15, 147, 199);
     }
 }
 
@@ -527,7 +666,7 @@ footer {
     /* display: flex;
     flex-direction: column; */
     /* box-shadow: 0 0 0.25em 0.25em rgba(0, 0, 0, 0.25); */
-    background:rgba(251, 255, 0, 0.356);
+    background:rgba(251, 255, 0, 0.116);
     text-align: center;
     /* fill: rgb(202, 201, 135); */
     padding-top: 10px;
